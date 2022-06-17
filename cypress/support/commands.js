@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 // Login command
 Cypress.Commands.add('login', (email, password) => {
-    cy.visit('https://uat.drizip.com/us')
+    cy.visit('https://drizip-tests.herokuapp.com/us')
 
     cy.get('.toggle-login').click()
     
@@ -12,7 +12,7 @@ Cypress.Commands.add('login', (email, password) => {
 // login randomly
 
 Cypress.Commands.add('LoginOnce', (email, delayTime) => {
-    cy.visit('https://uat.drizip.com/us')
+    cy.visit('https://drizip-tests.herokuapp.com/us')
     cy.get('.toggle-login').click() 
         cy.get('#input-email').type(email, delayTime)
         cy.get('#input-password').type('123456')

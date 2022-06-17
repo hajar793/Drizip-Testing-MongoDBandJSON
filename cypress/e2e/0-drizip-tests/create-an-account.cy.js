@@ -2,7 +2,7 @@ import * as data from "../../support/drizip-faker-data";
 describe('drizip testing',()=>{
   it('CREATE AN ACCOUNT',()=>{ 
     // ** -- Strart to Create account **-- // 
-      cy.visit('https://uat.drizip.com/us')
+      cy.visit('https://drizip-tests.herokuapp.com/us')
       cy.get('.toggle-login').click()
       cy.get('#swap-login').click()
       cy.get('#input-nombres').type(data.FName,{ delay: data.typingDelay })
