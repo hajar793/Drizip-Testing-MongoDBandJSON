@@ -2,7 +2,7 @@
     {
         "marca": "Skoda",
         "modelo": "Felicia",
-        "ano": 2017,
+        "ano": "2017",
         "kilometraje": 4,
         "usuarioId": "shz5GQAvgdz5YYQsu",
         "created_at": {
@@ -180,7 +180,7 @@
       {
         "marca": "Volvo",
         "modelo": "XC70",
-        "ano": 2020,
+        "ano": "2020",
         "kilometraje": 2,
         "usuarioId": "shz5GQAvgdz5YYQsu",
         "created_at": {
@@ -357,7 +357,7 @@
       {
         "marca": "Pontiac",
         "modelo": "Matiz",
-        "ano": 2016,
+        "ano": "2016",
         "kilometraje": 4,
         "usuarioId": "shz5GQAvgdz5YYQsu",
         "created_at": {
@@ -535,7 +535,7 @@
       {
         "marca": "Citroen",
         "modelo": "CX",
-        "ano": 2015,
+        "ano": "2015",
         "kilometraje": 3,
         "usuarioId": "shz5GQAvgdz5YYQsu",
         "created_at": {
@@ -714,7 +714,7 @@
       {
         "marca": "Chevrolet",
         "modelo": "Avalanche",
-        "ano": 2019,
+        "ano": "2019",
         "kilometraje": 2,
         "usuarioId": "shz5GQAvgdz5YYQsu",
         "created_at": {
