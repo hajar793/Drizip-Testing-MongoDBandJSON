@@ -12,9 +12,7 @@ export const randomDiscountTwoWeeks= faker.datatype.number({min:22, max:32})
 
 
 // 
-export const Emails=["hessaalharthy@hotmail.com",
-        "hessa@drizip.com",
-        "grinder@live.com","hajar@drizip.com"]
+export const Emails=["neemlaptop@outlook.com"]
 export const E_mail =faker.random.arrayElement(Emails)
 // edit information
 export const FName= faker.name.firstName()

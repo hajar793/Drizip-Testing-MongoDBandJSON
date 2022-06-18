@@ -35,7 +35,8 @@ describe('drizip testing',()=>{
  
      cy.wait(6000)
      cy.contains('Request').click()
-     cy.get('#btn-agregarTarjeta').click()//Add card
+     //cy.get('#btn-agregarTarjeta').click()//Add card
+     cy.get('#input-rut').type('123456789')
      cy.get('#input-titular').type('juan perez')
      cy.get('#input-numeroTarjeta').type('4111111111111111')
      cy.get('#input-fechaExp').type('12/24')
