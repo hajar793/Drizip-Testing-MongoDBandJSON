@@ -49,10 +49,8 @@ class listCarPage{
         this.element.vehicleFuel().select(fuel);
         this.element.vehicleGearbox().select(gear);
     }
-    setFeatures(f){
-        f.forEach(feature => {
-            this.element.vehicleFeatures().check(feature);
-        });
+    setFeatures(){
+            this.element.vehicleFeatures().check();
     }
     setDescription(d){
         this.element.vehicleDescription().type(d);

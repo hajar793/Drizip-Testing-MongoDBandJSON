@@ -8,18 +8,16 @@ describe('Drizip Testing list cars',()=>{
     })
 
     vehiculo.forEach(car => {
-      //let features =[car.aireacondicionado,car.cadenasparanieve,car.controlvelocidad,
-        //car.neumaticosinvierno,car.portabicicletas,car.portaequipajes,
-        //car.reproductorcd,car.sillainfantil,car.gps];
-      it('list a car',()=>{
-        listCarPage.setCarPage(car.marca,car.modelo,car.ano,car.kilometraje);
-        listCarPage.setFeaturesPage(car.patente,car.numerochasis,car.numeroplazas,car.numeropuertas,
-                                    car.combustible,car.cajacambios);
-        listCarPage.setFeatures();
-        listCarPage.setDescription(car.descripcion);
-        listCarPage.setContactAndPricePage(car.direccion,car.preciodiario,car.precioestimado);
-        listCarPage.last();
-      })
+
+        it('list a car',()=>{
+          listCarPage.setCarPage(car.marca,car.modelo,car.ano,car.kilometraje);
+          listCarPage.setFeaturesPage(car.patente,car.numerochasis,car.numeroplazas,car.numeropuertas,
+                                      car.combustible,car.cajacambios);
+          listCarPage.setFeatures();
+          listCarPage.setDescription(car.descripcion);
+          listCarPage.setContactAndPricePage(car.direccion,car.preciodiario,car.precioestimado);
+          listCarPage.last();
+        })
 
     })
 })

@@ -8,7 +8,7 @@ Cypress.Commands.add('login', (email, password) => {
     cy.get('#input-email').type(email,{ delay: 25 })
     cy.get('#input-password').type(password,{ delay: 25 })
     cy.get('.btn-login-email').click() 
-    cy.wait(5000);
+    //cy.wait(3000);
     cy.forceRunExceptionErr()
 })
 // login randomly
