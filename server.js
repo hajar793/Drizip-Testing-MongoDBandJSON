@@ -1,10 +1,9 @@
 //import vehicles from './cypress/fixtures/vehiculos.json';
 const {MongoClient}= require("mongodb");
-
-async function main() {
 const uri =
 "mongodb+srv://api:cHFYl8BUbvq9LFKB@testingcluster.4cl9wmc.mongodb.net/drizip?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
+async function main() {
 try {
     await client.connect();
     //await listDatabases(client);
@@ -27,9 +26,11 @@ async function listDatabases(client){
 async function resetDatabase(client){
     // backup db
     // erace db
-    vehiculos= await client.db.vehiculos.find({});
+    const database = client.db("drizip");
+    const cars = database.collection("vehiculos");
+    vehiculos= await cars.vehiculos.find();
     console.log("documents");
-    vehiculos.forEach(v => console.log(` - ${v.marca}`));
+    vehiculos.forEach(console.log());
     //emptyCollection = await client.db.vehiculos.deleteMany({});
     // insert data from json files
 }
