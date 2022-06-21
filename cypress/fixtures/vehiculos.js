@@ -1,4 +1,5 @@
-[
+
+module.exports=[
     {
         "marca": "Skoda",
         "modelo": "Felicia",

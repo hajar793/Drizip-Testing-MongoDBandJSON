@@ -1,4 +1,4 @@
-[{
+module.exports=[{
   "path": "HEADER",
   "llave": "Tab.publicarauto",
   "CL": "Publica tu auto",

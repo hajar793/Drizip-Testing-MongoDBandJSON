@@ -1,4 +1,4 @@
-[{
+module.exports=[{
   "marca": "Acura",
   "modelos": [
     "CL",

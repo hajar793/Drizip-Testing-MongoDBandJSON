@@ -1,5 +1,5 @@
-import listCarPage from './../../pages/listCarPage';
-const vehiculo= require('../../fixtures/vehiculos.json');
+const listCarPage= require('./../../pages/listCarPage');
+const vehiculo= require('../../fixtures/vehiculos');
 
 describe('Drizip Testing list cars',()=>{
     beforeEach(()=>{
@@ -9,7 +9,7 @@ describe('Drizip Testing list cars',()=>{
 
     vehiculo.forEach(car => {
 
-        it('list a car',()=>{
+        it('list a car '+car.marca,()=>{
           listCarPage.setCarPage(car.marca,car.modelo,car.ano,car.kilometraje);
           listCarPage.setFeaturesPage(car.patente,car.numerochasis,car.numeroplazas,car.numeropuertas,
                                       car.combustible,car.cajacambios);
@@ -18,6 +18,8 @@ describe('Drizip Testing list cars',()=>{
           listCarPage.setContactAndPricePage(car.direccion,car.preciodiario,car.precioestimado);
           listCarPage.last();
         })
-
     })
+    after(function() {
+    
+    });
 })

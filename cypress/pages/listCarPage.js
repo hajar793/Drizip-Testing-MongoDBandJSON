@@ -50,7 +50,7 @@ class listCarPage{
         this.element.vehicleGearbox().select(gear);
     }
     setFeatures(){
-            this.element.vehicleFeatures().check();
+        this.element.vehicleFeatures().check();
     }
     setDescription(d){
         this.element.vehicleDescription().type(d);
