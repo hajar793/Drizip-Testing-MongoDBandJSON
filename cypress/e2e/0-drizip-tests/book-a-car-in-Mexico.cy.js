@@ -1,17 +1,10 @@
-/// <reference types="cypress" />
 import * as data from "../../support/drizip-faker-data";
 const faker = require("faker");
 
-describe('Drizip Website', () => {
 
-    it('LogIn', () => { 
-
-     cy.LoginOnce(data.E_mail ,{ delay: data.typingDelay })
-       
-    
-        })
     it('Book car in mexico', () => {
 
+      cy.login(data.E_mail)
       cy.get('#input-direccion').type(faker.address.city('Mexico'))
       cy.get('[value="0"] > .medium-13').click() 
  
@@ -78,5 +71,5 @@ describe('Drizip Website', () => {
   
   
       })
-    })
+    
 
