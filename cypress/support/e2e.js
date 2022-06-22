@@ -17,3 +17,7 @@
 import './commands'
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+before(function() {
+    cy.exec('node cleanup.js')
+});
+

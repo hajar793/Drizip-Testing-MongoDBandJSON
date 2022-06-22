@@ -19,7 +19,5 @@ describe('Drizip Testing list cars',()=>{
           listCarPage.last();
         })
     })
-    after(function() {
-    
-    });
+
 })

@@ -1,6 +1,4 @@
 const vehiculo= require('./cypress/fixtures/vehiculos');
-const marcas= require('./cypress/fixtures/marcas');
-const textos= require('./cypress/fixtures/textos');
 const users= require('./cypress/fixtures/users');
 const MongoClient= require('mongodb').MongoClient;
 const uri =
@@ -10,14 +8,10 @@ async function main() {
 try {
     await client.connect();
     await resetDatabase(client,"vehiculos");
-    //await resetDatabase(client,"marcas");
-    //await resetDatabase(client,"textos");
     //await resetDatabase(client,"users"); 
     //await resetDatabase(client,"alquileres");
     //await fillCollection(client,"users",users);
-    //await fillCollection(client,"vehiculos",vehiculo);
-    //await fillCollection(client,"marcas",marcas);
-    //await fillCollection(client,"textos",textos);
+    await fillCollection(client,"vehiculos",vehiculo);
     //await fillCollection(client,"alquileres",alquileres);
     
 } catch(e) {
