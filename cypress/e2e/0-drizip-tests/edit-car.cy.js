@@ -3,7 +3,7 @@ import * as data from "../../support/drizip-faker-data";
 describe('Drizip Testing edit a car address, price and discounts',()=>{
     it('edit a car',()=>{
         //login
-        cy.login('neemsalem07@hotmail.com','HJK$123')
+        cy.login(data.E_mail)
         cy.forceRunExceptionErr()
         //start edit car
         cy.wait(2000)

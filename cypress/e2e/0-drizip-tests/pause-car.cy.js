@@ -1,8 +1,9 @@
+import * as data from "../../support/drizip-faker-data";
 describe('Drizip Testing pause a car',()=>{
    
     it('pause a car',()=>{
         //login
-        cy.login('neemsalem07@hotmail.com','HJK$123')
+        cy.login(data.E_mail)
         cy.forceRunExceptionErr()
         //start pause a car
         cy.get('.item-encabezado > .flex-center').click()

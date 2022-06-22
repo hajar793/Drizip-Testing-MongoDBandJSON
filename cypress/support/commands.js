@@ -1,13 +1,12 @@
 /// <reference types="cypress" />
 // Login command
-Cypress.Commands.add('login', (email, password) => {
+Cypress.Commands.add('login', (email) => {
     cy.visit('https://drizip-tests.herokuapp.com/us')
-
     cy.get('.toggle-login').click()
-    
     cy.get('#input-email').type(email,{ delay: 25 })
-    cy.get('#input-password').type(password,{ delay: 25 })
-    cy.get('.btn-login-email').click() 
+    cy.get('#input-password').type('123456',{ delay: 25 })
+    cy.get('.btn-login-email').click()
+    cy.get('.logo').click() 
     //cy.wait(3000);
     cy.forceRunExceptionErr()
 })
@@ -47,7 +46,7 @@ Cypress.Commands.add('clickRandomId',(parentList,childList)=>{
 Cypress.Commands.add('selectRandomItem1',(parentList,childList,start)=>{
     var faker = require("faker");
     let arrItems=[],arrList=[];
-    cy.wait(2000)
+    cy.wait(1000)
     cy.get(parentList).each((item,i,list)=>{
         cy.then(()=>{
             arrList= Array.from(list);
